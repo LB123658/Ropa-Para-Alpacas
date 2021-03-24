@@ -58,7 +58,24 @@ animation-name: example;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
-
+#about {
+position: absolute;
+top: 5px;
+right: 135px;
+height: 80px;
+font-size: 25px;
+color: white;
+text-decoration: none;
+background: transparent;
+border: 2px solid #282828;
+cursor: pointer;
+}
+#about:hover {
+border: 2px solid white;
+animation-name: example;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
 </style>
 </head>
 <body>
@@ -68,6 +85,8 @@ animation-name: example;
 <button id="home" title="Regresar a la primera página">Ropa para alpacas</button></a>
 <a href="comprar.html">
 <button id="buy" title="Comprar">Comprar</button></a>
+<a href="about.html">
+<button id="about" title="Sobre nosotros">Acerca de</button></a>
 </div>
 
 </body>
