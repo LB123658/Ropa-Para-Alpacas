@@ -4,9 +4,11 @@
 <title>Ropa para Alpacas</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel='icon' href='https://lb123658.github.io/Ropa-Para-Alpacas/favicon.png' type='image/png'/ >
 <style>
 * {
 font-family: 'Nunito', sans-serif;
+user-select: none;
 }
 #nav {
 position: fixed;
@@ -15,6 +17,7 @@ left: 0px;
 width: 100%;
 height: 90px;
 background: #282828;
+z-index: 1;
 }
 #home {
 position: absolute;
@@ -76,6 +79,50 @@ animation-name: example;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
+#foto {
+position: absolute;
+top: 20%;
+width: 30%;
+right: 10%;
+border: 2px solid #282828;
+border-radius: 10px;
+}
+#foto:hover {
+opacity: 0.9;
+}
+#frase {
+position: absolute;
+top: 20%;
+left: 20px;
+width: 50%;
+text-align: center;
+font-size: 30px;
+}
+#buyNow {
+text-decoration: none;
+color: white;
+background: #282828;
+border-radius: 25px;
+border: 2px solid #282828;
+height: 50px;
+width: 200px;
+font-size: 20px;
+height: 50px;
+}
+#buyNow:hover {
+background: white;
+color: #282828;
+cursor: pointer;
+animation-name: purchase;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+@keyframes purchase {
+ 
+  0% {background: #282828;}
+  100%   {background: white;}
+
+}
 </style>
 </head>
 <body>
@@ -89,5 +136,13 @@ animation-name: example;
 <button id="about" title="Sobre nosotros">Acerca de</button></a>
 </div>
 
+<img src="https://lb123658.github.io/Ropa-Para-Alpacas/foto.png" id="foto" />
+<p id="frase">Ahora las alpacas pueden llevar la ropa hecha de su lana.<br><br><a href="comprar.html"><button id="buyNow">Comprar ahora</button></a></p>
+
+
+<script>
+alert("Este sitio web es solo para nuestro proyecto. También no hay algo que puedes comprar.")
+
+</script>
 </body>
 </html>
