@@ -137,9 +137,15 @@ animation-name: purchase;
 </div>
 
 <img src="https://lb123658.github.io/Ropa-Para-Alpacas/foto.png" id="foto" />
-<p id="frase">Ahora las alpacas pueden llevar la ropa hecha de su lana.<br><br><a href="comprar.html"><button id="buyNow">Comprar ahora</button></a></p>
+<p id="frase">Camisa para alpacas<br><br><button id="buyNow" onclick="warning()">Comprar</button><br><br><span style="font-size: 15px;">Tallas disponibles: Pequeña | Mediana | Grande</span><br><span style="font-size: 15px;">Colores: Rojo | Azul | Negro | Amarillo | Blanco</span></p>
 
-
-
+<script>
+function warning() {
+alert("Lo siento. Esta prenda no está disponible.");
+document.getElementById("buyNow").innerHTML = ("No disponible");
+document.getElementById("buyNow").style.color = ("grey");
+document.getElementById("buyNow").style.cursor = ("default");
+}
+</script>
 </body>
 </html>
